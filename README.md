@@ -63,7 +63,7 @@ print(my_account)  # Display "Mehdi's account balance is 0"
 
 Once you've convinced yourself that your code is correct. Run `python3 test.py`: You should pass 4/7 tests
 
-### Step 4: Withdrawing from the account (2 points)
+### Step 4: Withdrawing from the account (3 points)
 Unfortunately, everything that goes up must come down. Let's figure out how to withdraw money from the account. 
 
 Define a `withdraw` method that takes one parameter called amount, and **decreases** the balance by that amount. As with `deposit` we want to ignore negative numbers.
