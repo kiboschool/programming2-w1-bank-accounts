@@ -19,7 +19,7 @@ class TestAccounts(unittest.TestCase):
         test_account.owner = "David"
         assert str(test_account) == "David's account balance is 5"
 
-    def test_account_objects_deposit_positive_amount():
+    def test_account_objects_deposit_positive_amount(self):
         test_account = Account("Mehdi")
         assert test_account.balance == 0
 
@@ -29,7 +29,7 @@ class TestAccounts(unittest.TestCase):
         test_account.deposit(100)
         assert test_account.balance == 200
 
-    def test_account_objects_deposit_negative_amount():
+    def test_account_objects_deposit_negative_amount(self):
         test_account = Account("Mehdi")
         assert test_account.balance == 0
         test_account.deposit(-10)
@@ -39,7 +39,7 @@ class TestAccounts(unittest.TestCase):
         test_account.deposit(-10)
         assert test_account.balance == 10
 
-    def test_account_objects_withdraw_possible_amount():
+    def test_account_objects_withdraw_possible_amount(self):
         test_account = Account("Mehdi")
         assert test_account.balance == 0
 
@@ -53,7 +53,7 @@ class TestAccounts(unittest.TestCase):
         assert test_account.balance == 0
 
 
-    def test_account_objects_withdraw_negative_amount():
+    def test_account_objects_withdraw_negative_amount(self):
         test_account = Account("Mehdi")
         assert test_account.balance == 0
 
@@ -63,7 +63,7 @@ class TestAccounts(unittest.TestCase):
         assert not test_account.withdraw(-10)
         assert test_account.balance == 100    
 
-    def test_account_objects_withdraw_over_balance_amount():
+    def test_account_objects_withdraw_over_balance_amount(self):
         test_account = Account("Mehdi")
         assert test_account.balance == 0
 
